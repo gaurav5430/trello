@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Treggo - Board</title> 
-    <link href="../css/index.css" type="text/css" rel="stylesheet"s>
+    <title>Treggo - Board</title>
+    <link href="/css/index.css" type="text/css" rel="stylesheet" s />
   </head>
   <body>
-    <div id="board">
-    </div>
+    <div id="board"></div>
 
     <script>
       window.boards = [];
       const board = {
-        'title': 'my board',
-        'description': 'Random description',
+        title: "my board",
+        description: "Random description",
         lists: [
           {
-            'title': 'Doing',
+            title: "Doing",
             items: [
-              { title: 'list1 item1 '},
-              { title: 'list1 item2 '},
-              { title: 'list1 item3 '},
+              { title: "list1 item1 " },
+              { title: "list1 item2 " },
+              { title: "list1 item3 " }
             ]
           },
           {
-            'title': 'list2',
+            title: "list2",
             items: [
-              { title: 'list1 item1 '},
-              { title: 'list1 item2 '},
-              { title: 'list1 item3 '},
+              { title: "list1 item1 " },
+              { title: "list1 item2 " },
+              { title: "list1 item3 " }
             ]
           },
           {
-            'title': 'list3',
+            title: "list3",
             items: [
-              { title: 'list1 item1 '},
-              { title: 'list1 item2 '},
-              { title: 'list1 item3 '},
+              { title: "list1 item1 " },
+              { title: "list1 item2 " },
+              { title: "list1 item3 " }
             ]
           },
           {
-            'title': 'list4',
+            title: "list4",
             items: [
-              { title: 'list1 item1 '},
-              { title: 'list1 item2 '},
-              { title: 'list1 item3 '},
+              { title: "list1 item1 " },
+              { title: "list1 item2 " },
+              { title: "list1 item3 " }
             ]
           },
           {
-            'title': 'list5',
+            title: "list5",
             items: [
-              { title: 'list2 item1 '},
-              { title: 'list2 item2 '},
-              { title: 'list2 item3 '},
+              { title: "list2 item1 " },
+              { title: "list2 item2 " },
+              { title: "list2 item3 " }
             ]
           }
         ]
-      }
+      };
       window.boards.push(board);
     </script>
 
-    <script src="../js/Board.js"></script>
-    <script src="../js/List.js"></script>
-    <script src="../js/ListItem.js"></script>
-    <script src="../js/utils.js"></script>
+    <script src="/js/Board.js"></script>
+    <script src="/js/List.js"></script>
+    <script src="/js/ListItem.js"></script>
+    <script src="/js/utils.js"></script>
     <script>
-      createBoardFromJson(window.boards[0], document.getElementById('board'));
+      createBoardFromJson(window.boards[0], document.getElementById("board"));
     </script>
-    
   </body>
 </html>
