@@ -1,0 +1,76 @@
+.list { 
+  font-size: 20px;
+  width: 300px;
+  flex-shrink: 0;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dfe3e6;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  position: relative;
+  white-space: normal;
+}
+
+.list__header {
+  flex: 0 0 auto;
+  padding: 10px 8px 8px;
+  position: relative;
+  min-height: 20px;
+  display: flex;
+}
+
+.list__title {
+  flex-grow: 1;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list__edit {
+  flex-grow: 1;
+}
+
+.list__add-trigger {
+  border-radius: 0 0 3px 3px;
+  color: #6b808c;
+  display: block;
+  flex: 0 0 auto;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.list__add-trigger:hover {
+  background-color: rgba(9,45,66,.13);
+  color: #17394d;
+} 
+
+.list__placeholder {
+  height: 30px;
+  width: 100%;
+  background: #999;
+  color: #999;
+  margin: 5px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9,45,66,.25);
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.drag * {
+  pointer-events: none;
+}

@@ -1,0 +1,11 @@
+.lists {
+  display: flex;
+  align-items: start;
+  overflow: auto;
+}
+
+.board__title {
+  padding: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
