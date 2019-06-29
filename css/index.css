@@ -1,0 +1,30 @@
+@import './board.css';
+@import './list.css';
+@import './list-item.css';
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.remove {
+  padding: 0px;
+  margin: 0px;
+  background: none;
+  border: none;
+  font-weight: 900;
+  cursor: pointer
+}
+
+.remove:hover {
+  color: red;
+}
